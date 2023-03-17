@@ -1,0 +1,15 @@
+{
+  "name": "utils",
+  "version": "1.0.0",
+  "description": "Public utilities library for Inpulse products and services.",
+  "main": "index.js",
+  "repository": "git@github.com:inpulsed/utils.git",
+  "author": "Jo Santana <johnny@inpulse.digital>",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "dayjs": "1.11.7",
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
+  }
+}

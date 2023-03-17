@@ -1,2 +1,3 @@
 # utils
-Inpulse Utils
+
+Public utilities library for Inpulse products and services.
