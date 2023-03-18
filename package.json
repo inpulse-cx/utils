@@ -1,5 +1,5 @@
 {
-  "name": "utils",
+  "name": "@inpulse/utils",
   "version": "1.0.0",
   "description": "Public utilities library for Inpulse products and services.",
   "main": "index.js",
