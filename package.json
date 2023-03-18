@@ -7,6 +7,12 @@
   "author": "Jo Santana <johnny@inpulse.digital>",
   "license": "MIT",
   "private": false,
+  "files": [
+    "src/"
+  ],
+  "exports": {
+    "./*": "./src/*"
+  },
   "dependencies": {
     "dayjs": "1.11.7",
     "react": "18.2.0",
