@@ -13,9 +13,9 @@
     "dist"
   ],
   "exports": {
-    "./*": {
-      "require": "./dist/cjs/*",
-      "import": "./dist/esm/*"
+    ".": {
+      "require": "./dist/cjs/index.js",
+      "import": "./dist/esm/index.js"
     }
   },
   "scripts": {
