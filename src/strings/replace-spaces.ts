@@ -1,4 +1,4 @@
-const replaceSpaces = (str: string, useDashes: boolean) => {
+const replaceSpaces = (str: string, useDashes?: boolean) => {
   if (!str || typeof str !== "string") return "";
   return str.replace(/\s/g, useDashes ? "-" : " ");
 };
