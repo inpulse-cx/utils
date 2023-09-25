@@ -2,16 +2,28 @@
   "name": "@inpulse/utils",
   "version": "2.0.0",
   "description": "Public utilities library for Inpulse products and services.",
-  "main": "index.js",
   "repository": "git@github.com:inpulsed/utils.git",
   "author": "Jo Santana <johnny@inpulse.digital>",
   "license": "MIT",
   "private": false,
+  "main": "./dist/cjs/index.js",
+  "module": "./dist/esm/index.js",
+  "types": "./dist/esm/index.d.ts",
   "files": [
-    "src/"
+    "dist"
   ],
   "exports": {
-    "./*": "./src/*"
+    ".": {
+      "require": "./dist/cjs/index.js",
+      "import": "./dist/esm/index.js"
+    }
+  },
+  "scripts": {
+    "preinstall": "npx only-allow pnpm",
+    "build": "pnpm build:cjs && pnpm build:esm",
+    "build:cjs": "tsc -p tsconfig.build.json --module commonjs --outDir dist/cjs --target es5",
+    "build:esm": "tsc -p tsconfig.build.json --module esNext --outDir dist/esm --target es6",
+    "prepublishOnly": "pnpm build"
   },
   "dependencies": {
     "@types/node": "20.4.0",
@@ -22,8 +34,5 @@
     "react-dom": "18.2.0",
     "typescript": "5.1.6",
     "usehooks-ts": "2.9.1"
-  },
-  "devDependencies": {
-    "rollup": "3.29.3"
   }
 }
