@@ -1,7 +1,7 @@
 {
   "name": "@inpulse/utils",
   "version": "2.0.4",
-  "description": "Public utilities library for Inpulse products and services.",
+  "description": "Utilities for Inpulse products & services.",
   "repository": "git@github.com:inpulsed/utils.git",
   "author": "Jo Santana <johnny@inpulse.digital>",
   "license": "MIT",

@@ -1,5 +1,5 @@
-type IndexedKey = {
+interface IndexedKey {
   [key: string]: any;
-};
+}
 
-export default IndexedKey;
+export { IndexedKey };

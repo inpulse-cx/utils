@@ -4,7 +4,7 @@ import replaceDoubleDashes from "./replace-double-dashes";
 import removeSpecialChars from "./remove-special-chars";
 import replaceSpaces from "./replace-spaces";
 
-const slugify = (str: string, useDashes?: boolean, ignoreDashes?: boolean) => {
+function slugify(str: string, useDashes?: boolean, ignoreDashes?: boolean) {
   if (!str || typeof str !== "string") return "";
   return replaceDoubleDashes(
     removeInitialDash(
@@ -17,6 +17,6 @@ const slugify = (str: string, useDashes?: boolean, ignoreDashes?: boolean) => {
       )
     )
   ).toLowerCase();
-};
+}
 
-export default slugify;
+export { slugify };

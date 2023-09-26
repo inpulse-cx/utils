@@ -1,3 +1,3 @@
 # utils
 
-Public utilities library for Inpulse products and services.
+Utilities for Inpulse products & services.
