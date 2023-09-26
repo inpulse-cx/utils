@@ -1,11 +1,14 @@
 {
   "compilerOptions": {
+    "baseUrl": ".",
     "declaration": true,
+    "pretty": true,
     "lib": ["dom", "esnext"],
     "skipLibCheck": true,
     "strict": true,
-    "esModuleInterop": true
+    "jsx": "react-jsx",
+    "esModuleInterop": true,
+    "removeComments": true
   },
-  "include": ["./src/**/*.ts", "./src/**/*.tsx"],
   "exclude": ["node_modules", "dist"]
 }
