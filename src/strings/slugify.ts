@@ -4,7 +4,11 @@ import replaceDoubleDashes from "./replace-double-dashes";
 import removeSpecialChars from "./remove-special-chars";
 import replaceSpaces from "./replace-spaces";
 
-function slugify(str: string, useDashes?: boolean, ignoreDashes?: boolean) {
+export function slugify(
+  str: string,
+  useDashes?: boolean,
+  ignoreDashes?: boolean
+): string {
   if (!str || typeof str !== "string") return "";
   return replaceDoubleDashes(
     removeInitialDash(
@@ -18,5 +22,3 @@ function slugify(str: string, useDashes?: boolean, ignoreDashes?: boolean) {
     )
   ).toLowerCase();
 }
-
-export { slugify };
