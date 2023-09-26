@@ -1,2 +1,2 @@
-export * from "./capitalize";
-export * from "./slugify";
+export { capitalize } from "./capitalize";
+export { slugify } from "./slugify";
