@@ -4,4 +4,4 @@ function sortByAlphabet(a: any, b: any, key: string, extraKey: string) {
   return a < b ? -1 : 1;
 }
 
-export default sortByAlphabet;
+export { sortByAlphabet };

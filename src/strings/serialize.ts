@@ -9,4 +9,4 @@ function serialize(json: any) {
   return result.replace(/\+/g, "%20");
 }
 
-export default serialize;
+export { serialize };

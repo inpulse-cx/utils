@@ -1,1 +1,1 @@
-export type { IndexedKey } from "./IndexedKey";
+export * from "./IndexedKey";

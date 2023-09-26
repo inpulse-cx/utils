@@ -9,4 +9,4 @@ function sortByDate(a: any, b: any, key: string, DESC: boolean) {
   return result;
 }
 
-export default sortByDate;
+export { sortByDate };

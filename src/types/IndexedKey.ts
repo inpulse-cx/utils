@@ -1,3 +1,5 @@
-export type IndexedKey = {
+type IndexedKey = {
   [key: string]: any;
 };
+
+export type { IndexedKey };
