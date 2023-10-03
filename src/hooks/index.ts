@@ -20,6 +20,7 @@ export { useLocalStorage } from "usehooks-ts";
 export { useLockedBody } from "usehooks-ts";
 export { useMediaQuery } from "usehooks-ts";
 export { useMutation } from "./use-mutation";
+export { usePrevious } from "./use-previous";
 export { useOnClickOutside } from "usehooks-ts";
 export { useReadLocalStorage } from "usehooks-ts";
 export { useScreen } from "usehooks-ts";
