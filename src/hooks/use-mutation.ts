@@ -16,4 +16,4 @@ function useMutation(key: string) {
   };
 }
 
-export default useMutation;
+export { useMutation };
