@@ -1,3 +1,5 @@
+"use client";
+
 import { useRef } from "react";
 
 function usePrevious<TValue extends unknown>(value: TValue) {
