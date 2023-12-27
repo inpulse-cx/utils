@@ -4,20 +4,20 @@ import replaceDoubleDashes from "./replace-double-dashes";
 import removeSpecialChars from "./remove-special-chars";
 import replaceSpaces from "./replace-spaces";
 
-function slugify(
-  str: string,
-  useDashes?: boolean,
-  ignoreDashes?: boolean
-): string {
-  if (!str || typeof str !== "string") return "";
+type SlugifyOptions = {
+  ignoreDashes?: boolean;
+  ignoreDots?: boolean;
+  useDashes?: boolean;
+};
+
+function slugify(string: string, options?: SlugifyOptions): string {
+  if (!string || typeof string !== "string") return "";
+  const { ignoreDashes, ignoreDots, useDashes } = options || {};
   return replaceDoubleDashes(
     removeInitialDash(
       replaceSpaces(
-        removeSpecialChars(
-          removeAccents(str),
-          ignoreDashes !== undefined ? ignoreDashes : false
-        ),
-        useDashes !== undefined ? useDashes : true
+        removeSpecialChars(removeAccents(string), { ignoreDashes, ignoreDots }),
+        { useDashes }
       )
     )
   ).toLowerCase();

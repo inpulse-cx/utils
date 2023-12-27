@@ -1,6 +1,6 @@
-function removeInitialDash(str: string) {
-  if (!str || typeof str !== "string") return "";
-  return str.replace(/^-/g, "");
+function removeInitialDash(string: string) {
+  if (!string || typeof string !== "string") return "";
+  return string.replace(/^-/g, "");
 }
 
 export default removeInitialDash;

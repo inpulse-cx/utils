@@ -1,6 +1,11 @@
-function replaceSpaces(str: string, useDashes?: boolean) {
-  if (!str || typeof str !== "string") return "";
-  return str.replace(/\s/g, useDashes ? "-" : " ");
+type ReplaceSpacesOptions = {
+  useDashes?: boolean;
+};
+
+function replaceSpaces(string: string, options?: ReplaceSpacesOptions) {
+  if (!string || typeof string !== "string") return "";
+  const { useDashes = true } = options || {};
+  return string.replace(/\s/g, useDashes ? "-" : " ");
 }
 
 export default replaceSpaces;

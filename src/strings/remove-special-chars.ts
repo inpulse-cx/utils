@@ -1,7 +1,22 @@
-function replaceSpecialChars(str: string, ignoreDashes?: boolean) {
-  if (!str || typeof str !== "string") return "";
-  if (ignoreDashes) return str.replace(/[^\w\s-]/gi, "");
-  return str.replace(/[^\w\s]/gi, "");
+type RemoveSpecialCharsOptions = {
+  ignoreDashes?: boolean;
+  ignoreDots?: boolean;
+};
+
+function removeSpecialChars(
+  string: string,
+  options?: RemoveSpecialCharsOptions
+) {
+  if (!string || typeof string !== "string") return "";
+  const { ignoreDashes, ignoreDots } = options || {};
+  if (ignoreDashes && ignoreDots) {
+    return string.replace(/[^\w\s-\.]/gi, "");
+  } else if (ignoreDashes) {
+    return string.replace(/[^\w\s-]/gi, "");
+  } else if (ignoreDots) {
+    return string.replace(/[^\w\s\.]/gi, "");
+  }
+  return string.replace(/[^\w\s]/gi, "");
 }
 
-export default replaceSpecialChars;
+export default removeSpecialChars;

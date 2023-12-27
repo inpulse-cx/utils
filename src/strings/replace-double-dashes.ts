@@ -1,6 +1,6 @@
-function replaceDoubleDashes(str: string) {
-  if (!str || typeof str !== "string") return "";
-  return str.replace(/-+/g, "-");
+function replaceDoubleDashes(string: string) {
+  if (!string || typeof string !== "string") return "";
+  return string.replace(/-+/g, "-");
 }
 
 export default replaceDoubleDashes;

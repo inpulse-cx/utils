@@ -1,6 +1,6 @@
-function trimDashes(str: string) {
-  if (!str || typeof str !== "string") return "";
-  return str.replace(/^-/g, "").replace(/-$/g, "");
+function trimDashes(string: string) {
+  if (!string || typeof string !== "string") return "";
+  return string.replace(/^-/g, "").replace(/-$/g, "");
 }
 
 export default trimDashes;
