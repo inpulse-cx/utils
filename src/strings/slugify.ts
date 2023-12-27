@@ -7,6 +7,7 @@ import replaceSpaces from "./replace-spaces";
 type SlugifyOptions = {
   ignoreDashes?: boolean;
   ignoreDots?: boolean;
+  // isFilename?: boolean; // TODO: Consider last dot, only
   useDashes?: boolean;
 };
 
