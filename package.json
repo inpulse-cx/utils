@@ -1,6 +1,6 @@
 {
   "name": "@inpulse/utils",
-  "version": "2.2.2",
+  "version": "2.2.3",
   "description": "Utilities for Inpulse products & services.",
   "repository": "git@github.com:inpulsed/utils.git",
   "author": "Jo Santana <johnny@inpulse.digital>",
@@ -15,7 +15,13 @@
   "exports": {
     ".": {
       "require": "./dist/cjs/index.js",
-      "import": "./dist/esm/index.js"
+      "import": "./dist/esm/index.js",
+      "types": "./dist/esm/index.d.ts"
+    },
+    "./server": {
+      "require": "./dist/cjs/server.js",
+      "import": "./dist/esm/server.js",
+      "types": "./dist/esm/server.d.ts"
     }
   },
   "scripts": {
