@@ -2,7 +2,7 @@
   "name": "@inpulse/utils",
   "version": "3.0.0",
   "description": "Utilities for Inpulse products & services.",
-  "repository": "git@github.com:inpulsed/utils.git",
+  "repository": "git@github.com:inpulse-cx/utils.git",
   "author": "Jo Santana <johnny@inpulse.digital>",
   "license": "MIT",
   "private": false,
