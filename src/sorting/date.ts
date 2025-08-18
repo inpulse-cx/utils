@@ -1,9 +1,9 @@
-import dayjs from "dayjs";
+import { getTime } from "date-fns";
 
 function sortByDate(a: any, b: any, key: string, DESC: boolean) {
   if (!key) return -1;
-  const timestampA = dayjs(a[key].toDate()).valueOf();
-  const timestampB = dayjs(b[key].toDate()).valueOf();
+  const timestampA = getTime(a[key].toDate());
+  const timestampB = getTime(b[key].toDate());
   let result = timestampA < timestampB ? -1 : 1;
   if (DESC) result = -result; // ASC by default
   return result;
